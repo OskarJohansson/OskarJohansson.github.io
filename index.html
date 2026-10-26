@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oskar Johansson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== MENY ===================== -->
+    <header class="meny">
+        <nav>
+            <ul>
+                <li><a href="#projekt">Projects</a></li>
+                <li><a href="#erfarenhet">Experience</a></li>
+                <li><a href="index-sv.html" class="sprak">Svenska</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================== TOPPEN ===================== -->
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>Oskar Johansson</h1>
+
+            <p class="roll">Automation &amp; Mechatronics Engineering student at Chalmers, year 2 of 5</p>
+            <p class="plats">📍 Gothenburg, Sweden</p>
+            <p class="beskrivning">
+                I enjoy building things where mechanics, electronics and software meet,
+                and I am especially drawn to the software side. This is where I collect my projects.
+            </p>
+
+            <ul class="taggar">
+                <li>Python</li>
+                <li>C++</li>
+                <li>Docker</li>
+                <li>Catia V5</li>
+                <li>Codesys</li>
+                <li>Electrical circuits</li>
+                <li>Measurement technology</li>
+                <li>Data structures</li>
+            </ul>
+
+            <!-- Kontaktknappar -->
+            <div class="lankar">
+                <a href="https://www.linkedin.com/in/oskar-johansson-ab323a388">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- ===================== PROJEKT ===================== -->
+        <section id="projekt">
+            <h2>Projects</h2>
+
+            <!-- Ett kort per projekt. Kopiera hela <article> för att lägga till ett nytt. -->
+            <article class="projekt-kort">
+                <h3>Home server with Linux and Docker</h3>
+                <p>
+                    My own server on a small HP computer running Ubuntu Server. It streams
+                    films and series to phones and TVs, both at home and on the go.
+                </p>
+                <ul class="punkter">
+                    <li>All services run as Docker containers, defined in a single Docker Compose file.</li>
+                    <li>The Jellyfin media server uses hardware acceleration to transcode video.</li>
+                    <li>Part of the traffic is routed through a WireGuard VPN in its own container, so nothing can leak outside the tunnel.</li>
+                    <li>Secure remote access through Tailscale, without opening any ports on the router.</li>
+                </ul>
+                <ul class="taggar">
+                    <li>Linux</li>
+                    <li>Docker</li>
+                    <li>Networking</li>
+                    <li>VPN</li>
+                </ul>
+            </article>
+
+            <!-- Kort för projekt som inte är klara än -->
+            <article class="projekt-kort kommande">
+                <span class="datum">In progress</span>
+                <h3>More projects on the way</h3>
+                <p>
+                    I am working on more projects right now. They will show up here when they
+                    are finished, with what I did and what I learned.
+                </p>
+            </article>
+        </section>
+
+        <!-- ===================== ERFARENHET ===================== -->
+        <section id="erfarenhet">
+            <h2>Experience</h2>
+
+            <h3 class="underrubrik">Work</h3>
+            <ul class="lista">
+                <li>
+                    <span class="datum">Nov 2025 – present</span>
+                    <div>
+                        <h3>Ica Nära Lunden</h3>
+                        <p>Weekend job at a grocery store: checkout, restocking and picking Foodora and Wolt delivery orders.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="datum">Apr – Aug 2025</span>
+                    <div>
+                        <h3>Gekås, restaurant</h3>
+                        <p>Serving, checkout and dishwashing following the kitchen's hygiene routines.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="datum">2024</span>
+                    <div>
+                        <h3>Bua Shellfish</h3>
+                        <p>Packing and basic quality checks in food production.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="datum">2022 – 2024</span>
+                    <div>
+                        <h3>Gekås, women's department</h3>
+                        <p>Sales, customer service and restocking during peak season.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <h3 class="underrubrik">Education</h3>
+            <ul class="lista">
+                <li>
+                    <span class="datum">2025 – present</span>
+                    <div>
+                        <h3>Chalmers University of Technology</h3>
+                        <p>MSc in Engineering, Automation &amp; Mechatronics (year 2 of 5).</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="datum">2021 – 2024</span>
+                    <div>
+                        <h3>Peder Skrivares skola</h3>
+                        <p>Upper secondary school, Technology programme, specialising in Information and Media Technology.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- ===================== SIDFOT ===================== -->
+    <footer>
+        <p>© 2026 Oskar Johansson · <a href="mailto:oskarj27@gmail.com">oskarj27@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>

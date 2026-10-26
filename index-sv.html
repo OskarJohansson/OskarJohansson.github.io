@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oskar Johansson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== MENY ===================== -->
+    <header class="meny">
+        <nav>
+            <ul>
+                <li><a href="#projekt">Projekt</a></li>
+                <li><a href="#erfarenhet">Erfarenhet</a></li>
+                <li><a href="index.html" class="sprak">English</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================== TOPPEN ===================== -->
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>Oskar Johansson</h1>
+
+            <p class="roll">Student i Automation &amp; Mekatronik på Chalmers, år 2 av 5</p>
+            <p class="plats">📍 Göteborg</p>
+            <p class="beskrivning">
+                Jag gillar att bygga saker där mekanik, elektronik och programmering möts.
+                Här samlar jag mina projekt.
+            </p>
+
+            <ul class="taggar">
+                <li>Python</li>
+                <li>C++</li>
+                <li>Docker</li>
+                <li>Catia V5</li>
+                <li>Codesys</li>
+                <li>Elektriska kretsar</li>
+                <li>Mätteknik</li>
+                <li>Datastrukturer</li>
+            </ul>
+
+            <!-- Kontaktknappar -->
+            <div class="lankar">
+                <a href="https://www.linkedin.com/in/oskar-johansson-ab323a388">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- ===================== PROJEKT ===================== -->
+        <section id="projekt">
+            <h2>Projekt</h2>
+
+            <!-- Ett kort per projekt. Kopiera hela <article> för att lägga till ett nytt. -->
+            <article class="projekt-kort">
+                <h3>Hemserver med Linux och Docker</h3>
+                <p>
+                    En egen server på en liten HP-dator som kör Ubuntu Server. Den streamar
+                    film och serier till telefoner och TV hemma och utanför hemmet.
+                </p>
+                <ul class="punkter">
+                    <li>Alla tjänster körs som Docker-containrar som beskrivs i en Docker Compose-fil.</li>
+                    <li>Mediaservern Jellyfin använder hårdvaruacceleration för omkodning av video.</li>
+                    <li>Delar av trafiken går genom en WireGuard-VPN i en egen container, så ingen trafik kan läcka utanför tunneln.</li>
+                    <li>Säker fjärråtkomst via Tailscale, utan att öppna portar i routern.</li>
+                </ul>
+                <ul class="taggar">
+                    <li>Linux</li>
+                    <li>Docker</li>
+                    <li>Nätverk</li>
+                    <li>VPN</li>
+                </ul>
+            </article>
+
+            <!-- Kort för projekt som inte är klara än -->
+            <article class="projekt-kort kommande">
+                <span class="datum">På gång</span>
+                <h3>Fler projekt på väg</h3>
+                <p>
+                    Jag arbetar på fler projekt just nu. De kommer upp här när de är
+                    färdiga, med vad jag gjorde och vad jag lärde mig.
+                </p>
+            </article>
+        </section>
+
+        <!-- ===================== ERFARENHET ===================== -->
+        <section id="erfarenhet">
+            <h2>Erfarenhet</h2>
+
+            <h3 class="underrubrik">Arbete</h3>
+            <ul class="lista">
+                <li>
+                    <span class="datum">Nov 2025 – nu</span>
+                    <div>
+                        <h3>Ica Nära Lunden</h3>
+                        <p>Helgjobb med kassa, varupåfyllning och plock av Foodora- och Wolt-ordrar.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="datum">Apr – aug 2025</span>
+                    <div>
+                        <h3>Gekås, restaurangen</h3>
+                        <p>Servering, kassa och disk enligt kökets hygienrutiner.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="datum">2024</span>
+                    <div>
+                        <h3>Bua Shellfish</h3>
+                        <p>Packning och enklare kvalitetskontroller i livsmedelsproduktion.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="datum">2022 – 2024</span>
+                    <div>
+                        <h3>Gekås, damavdelningen</h3>
+                        <p>Försäljning, kundservice och varupåfyllning under högsäsong.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <h3 class="underrubrik">Utbildning</h3>
+            <ul class="lista">
+                <li>
+                    <span class="datum">2025 – nu</span>
+                    <div>
+                        <h3>Chalmers tekniska högskola</h3>
+                        <p>Civilingenjör, Automation &amp; Mekatronik (år 2 av 5).</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="datum">2021 – 2024</span>
+                    <div>
+                        <h3>Peder Skrivares skola</h3>
+                        <p>Teknikprogrammet, inriktning Information- och medieteknik.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- ===================== SIDFOT ===================== -->
+    <footer>
+        <p>© 2026 Oskar Johansson · <a href="mailto:oskarj27@gmail.com">oskarj27@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>

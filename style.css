@@ -1,0 +1,288 @@
+/* Färgerna samlade på ett ställe. Ändra här så ändras hela sidan. */
+:root {
+    --bg: #0e1220;
+    --yta: #171c2d;
+    --text: #e8eaf2;
+    --svag: #a3aac0;
+    --accent: #8098ff;
+    --accent-ljus: #1f2850;
+    --kant: #262c42;
+    /* Den blå toppen */
+    --hero-fran: #10173a;
+    --hero-till: #2c46b8;
+    --hero-text: #ffffff;
+    --hero-tagg: rgba(255, 255, 255, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+a {
+    color: var(--accent);
+}
+
+/* ===================== MENY ===================== */
+.meny {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--yta);
+    border-bottom: 1px solid var(--kant);
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: flex-end; /* menyn ligger till höger */
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+nav ul a {
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: var(--svag);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul a:hover {
+    color: var(--accent);
+    background-color: var(--accent-ljus);
+}
+
+/* ===================== TOPPEN ===================== */
+.hero {
+    background: linear-gradient(135deg, var(--hero-fran), var(--hero-till));
+    color: var(--hero-text);
+    padding: 70px 20px;
+}
+
+.hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 44px;
+    line-height: 1.1;
+    margin-bottom: 14px;
+}
+
+.hero .roll {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero .plats {
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.hero .beskrivning {
+    font-size: 17px;
+    opacity: 0.85;
+    max-width: 520px;
+}
+
+.hero .taggar {
+    margin-top: 20px;
+}
+
+.hero .taggar li {
+    background-color: var(--hero-tagg);
+    color: var(--hero-text);
+}
+
+/* Knapparna för mejl och LinkedIn */
+.lankar {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.lankar a {
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: var(--hero-text);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.lankar a:hover {
+    background-color: var(--hero-tagg);
+}
+
+/* Språkknappen i menyn får en kant så den syns */
+nav ul a.sprak {
+    border: 1px solid var(--kant);
+}
+
+/* ===================== SEKTIONER ===================== */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding-top: 80px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 26px;
+}
+
+/* Blå linje under rubrikerna */
+h2::after {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 4px;
+    background-color: var(--accent);
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.taggar {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.taggar li {
+    background-color: var(--accent-ljus);
+    color: var(--accent);
+    padding: 4px 13px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ===================== PROJEKT ===================== */
+.projekt-kort {
+    background-color: var(--yta);
+    border: 1px solid var(--kant);
+    border-radius: 14px;
+    padding: 26px;
+    max-width: 780px;
+    margin-bottom: 20px;
+}
+
+.projekt-kort h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.projekt-kort p {
+    color: var(--svag);
+}
+
+/* Punktlistan med vad jag gjorde */
+.punkter {
+    color: var(--svag);
+    margin: 14px 0 18px 20px;
+}
+
+.punkter li {
+    margin-bottom: 6px;
+}
+
+/* Kortet för projekt som inte är klara: streckad kant */
+.kommande {
+    background-color: transparent;
+    border: 2px dashed var(--kant);
+}
+
+/* ===================== ERFARENHET ===================== */
+.underrubrik {
+    color: var(--svag);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 30px 0 12px;
+}
+
+.lista {
+    list-style: none;
+    background-color: var(--yta);
+    border: 1px solid var(--kant);
+    border-radius: 14px;
+    max-width: 780px;
+}
+
+.lista li {
+    display: flex;
+    gap: 24px;
+    padding: 22px 26px;
+    border-bottom: 1px solid var(--kant);
+}
+
+.lista li:last-child {
+    border-bottom: none;
+}
+
+.lista p {
+    color: var(--svag);
+}
+
+.datum {
+    width: 130px;
+    flex-shrink: 0;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ===================== SIDFOT ===================== */
+footer {
+    margin-top: 90px;
+    padding: 30px 20px;
+    border-top: 1px solid var(--kant);
+    text-align: center;
+    color: var(--svag);
+    font-size: 14px;
+}
+
+/* ===================== MOBIL ===================== */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .lista li {
+        flex-direction: column;
+        gap: 2px;
+    }
+}
